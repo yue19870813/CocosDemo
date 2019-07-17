@@ -76,6 +76,8 @@ precision highp float;
   varying mediump vec2 v_uv0;
 #endif
 
+uniform float time;
+
 #include <alpha-test>
 
 varying lowp vec4 v_color;
@@ -93,6 +95,19 @@ void main () {
   ALPHA_TEST(color);
 
   gl_FragColor = color;
+
+  float temp = v_uv0.x - time;
+  if (temp <= 0.0) {
+    float temp2 = abs(temp);
+    if (temp2 <= 0.2) {
+      gl_FragColor.w = 1.0 - temp2/0.2;
+    } else {
+      gl_FragColor.w = 0.0;
+    }
+  } else {
+    gl_FragColor.w = 1.0;
+  }
+
 }
 
 }
