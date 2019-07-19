@@ -96,6 +96,7 @@ void main () {
 
   gl_FragColor = color;
 
+  // 这里是新增的逻辑代码
   float temp = v_uv0.x - time;
   if (temp <= 0.0) {
     float temp2 = abs(temp);

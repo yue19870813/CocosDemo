@@ -8,7 +8,7 @@ export default class Gradient extends cc.Component {
     kitty: cc.Sprite = null;
 
     material;
-    time = 0;
+    time: number = 0;
 
     start () {
         // 获取材质
@@ -20,7 +20,9 @@ export default class Gradient extends cc.Component {
     upd() {
         this.time += 0.01;
         this.material.effect.setProperty('time', this.time);
+        if (this.time > 1.2) {
+            this.unschedule(this.upd);
+        }
     }
 
-    // update (dt) {}
 }
