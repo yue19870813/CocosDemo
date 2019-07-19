@@ -719,7 +719,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 550.78,
+      "width": 630.84,
       "height": 54.4
     },
     "_anchorPoint": {
@@ -767,8 +767,8 @@
       }
     ],
     "_useOriginalSize": false,
-    "_string": "Gradient（透明渐变效果v2.x）",
-    "_N$string": "Gradient（透明渐变效果v2.x）",
+    "_string": "001-Gradient（透明渐变效果v2.x）",
+    "_N$string": "001-Gradient（透明渐变效果v2.x）",
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
