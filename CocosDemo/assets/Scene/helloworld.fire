@@ -883,7 +883,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Gradient",
+    "_name": "overlaycut",
     "_objFlags": 0,
     "_parent": {
       "__id__": 11
@@ -913,7 +913,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 464.2,
+      "width": 277.48,
       "height": 54.4
     },
     "_anchorPoint": {
@@ -961,8 +961,8 @@
       }
     ],
     "_useOriginalSize": false,
-    "_string": "To be continue（待更新）",
-    "_N$string": "To be continue（待更新）",
+    "_string": "002-overlay cut",
+    "_N$string": "002-overlay cut",
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
@@ -1073,7 +1073,7 @@
     "component": "",
     "_componentId": "e1b90/rohdEk4SdmmEZANaD",
     "handler": "onClick",
-    "customEventData": "Gradient"
+    "customEventData": "overlaycut"
   },
   {
     "__type__": "cc.Widget",
