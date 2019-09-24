@@ -55,7 +55,7 @@ export default class FireEmblem extends cc.Component {
         tiled.on(cc.Node.EventType.TOUCH_END, () => {
             this.resetColor();
             // 4.获取可行动数据
-            let result = this.getCanMoveData(cc.v2(x, y), 4);
+            let result = this.getCanMoveData(cc.v2(x, y), 4, null, true);
             // 5.打印结果
             console.dir(result);
             this.setColor(result);
@@ -137,22 +137,26 @@ export default class FireEmblem extends cc.Component {
      * @param {Map<number, number>} targetCfg 当前移动对象的配置，用于配置目标擅长或者劣势地形，默认为空(可选)
      * @param {boolean} isShowEdge 是否返回不能移动的边缘数据，默认为不返回(可选)
      */
-    getCanMoveData(pos: cc.Vec2, limit: number, targetCfg?: Map<number, number>, isShowEdge: boolean = false): MapPos[] {
+    getCanMoveData(pos: cc.Vec2, limit: number, targetCfg?: Map<number, number>,
+                    isShowEdge: boolean = false): MapPos[] {
         if (targetCfg) {
             this._targetCfg = targetCfg;
         } else {
             this._targetCfg = null;
         }
+        // 存储可移动坐标的结果数组
         let resultPos: MapPos[] = [];
         // 将原点存入结果
         let center = new MapPos(pos.x, pos.y, 0, MapPosStatus.CAN_MOVE);
         resultPos.push(center);
         let stepCount = 0;
         let start = 0;
+        // 逐步判断
         while (stepCount < limit) {
             start = this.scanMap(resultPos, limit, start);
             stepCount++;
         }
+        // 是否显示不可移动的边缘
         if (isShowEdge) {
             let r = resultPos.concat(this._canntList);
             this._canntList = [];
@@ -196,7 +200,8 @@ export default class FireEmblem extends cc.Component {
                     return (p.x === pos.x && p.y === pos.y);
                 });
                 if (!newPos) {
-                    let value = pos.limit + this.getStepByType(targetPos) + this.getTargetStepByType(targetPos);
+                    let value = pos.limit + this.getStepByType(targetPos) 
+                                + this.getTargetStepByType(targetPos);
                     if (value <= 0) {
                         // 如果计算的最终步数小于等于0，那么移动最小步数。
                         value = this._minStep;
