@@ -41,8 +41,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.5453125,
-      "y": 0.5453125,
+      "x": 0.6140380859375,
+      "y": 0.6140380859375,
       "z": 1
     },
     "_quat": {
@@ -897,7 +897,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 277.48,
+      "width": 464.12,
       "height": 40
     },
     "_anchorPoint": {
@@ -940,8 +940,8 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
-    "_string": "002-overlay cut",
-    "_N$string": "002-overlay cut",
+    "_string": "002-overlay cut(剪切效果)",
+    "_N$string": "002-overlay cut(剪切效果)",
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
@@ -1086,7 +1086,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 250.86,
+      "width": 517.5,
       "height": 40
     },
     "_anchorPoint": {
@@ -1129,8 +1129,8 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
-    "_string": "003-Schedule",
-    "_N$string": "003-Schedule",
+    "_string": "003-Schedule(自定义定时器)",
+    "_N$string": "003-Schedule(自定义定时器)",
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
@@ -1275,7 +1275,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 168.53,
+      "width": 497.4,
       "height": 40
     },
     "_anchorPoint": {
@@ -1318,8 +1318,8 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
-    "_string": "004-Test ",
-    "_N$string": "004-Test ",
+    "_string": "004-Fire Emblem(战旗寻路)",
+    "_N$string": "004-Fire Emblem(战旗寻路)",
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
@@ -1464,7 +1464,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 362.01,
+      "width": 548.65,
       "height": 40
     },
     "_anchorPoint": {
@@ -1507,8 +1507,8 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
-    "_string": "005-Image retention",
-    "_N$string": "005-Image retention",
+    "_string": "005-Image retention(幻影效果)",
+    "_N$string": "005-Image retention(幻影效果)",
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,

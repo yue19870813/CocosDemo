@@ -52,7 +52,7 @@
         "iOS",
         "HTML5"
       ],
-      "package_download_url": "https://download.cocos.com/CocosServices/plugins/service-matchvs/1.0.9_3.7.9.9.zip",
+      "package_download_url": "https://download.cocos.com/CocosServices/plugins/service-matchvs/1.0.10_3.7.9.10.zip",
       "package_version_desc": "",
       "service_component_name": "service-matchvs",
       "package_versions": [
@@ -60,7 +60,8 @@
         "1.0.7_3.7.9.6",
         "1.0.6_3.7.9.2",
         "1.0.5_3.7.7.3",
-        "1.0.3_3.7.6.4"
+        "1.0.3_3.7.6.4",
+        "1.0.10_3.7.9.10"
       ],
       "build_platform": [
       ],
