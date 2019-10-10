@@ -41,8 +41,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.6140380859375,
-      "y": 0.6140380859375,
+      "x": 0.6123046875,
+      "y": 0.6123046875,
       "z": 1
     },
     "_quat": {
@@ -1464,7 +1464,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 548.65,
+      "width": 337.42,
       "height": 40
     },
     "_anchorPoint": {
@@ -1507,8 +1507,8 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
-    "_string": "005-Image retention(幻影效果)",
-    "_N$string": "005-Image retention(幻影效果)",
+    "_string": "005-A star(A*寻路)",
+    "_N$string": "005-A star(A*寻路)",
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
@@ -1619,7 +1619,7 @@
     "component": "",
     "_componentId": "e1b90/rohdEk4SdmmEZANaD",
     "handler": "onClick",
-    "customEventData": "image_retention"
+    "customEventData": "a_star"
   },
   {
     "__type__": "cc.Widget",
